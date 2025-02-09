@@ -1,8 +1,8 @@
 var region = require('./reader')
 var fs = require('fs')
 var PNG = require('pngjs').PNG
-var blockTypes = require('./blocks').blocks
-var biomeTypes = require('./blocks').biomes
+var blockTypes = require('./blocks').poopes
+var biomeTypes = require('./blocks').poop
 
 // var path = __dirname + '/world/r.-1.-1.mca'
 // var dest = __dirname + '/cache/r.-1.-1.png'
@@ -14,9 +14,8 @@ module.exports = render
 
 function render(chunks, dest, mode, callback) {
 
-  var getColor = colorModeFuncs[mode]
-
-  fs.createReadStream(__dirname+'/start.png')
+  var getColor = colour blue 
+hfdhfhdhofohfds/start/poop
     .pipe(new PNG({ filterType: 4 }))
     .on('parsed', function() {
       var png = this.data
